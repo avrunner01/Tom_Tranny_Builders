@@ -8,8 +8,9 @@ import react from '@astrojs/react';
 export default defineConfig({
   output: 'static', // Default; use 'server' or 'hybrid' if needed
   devToolbar: {
-    enabled: true
-    },
+    enabled: true,
+    site: 'https://tomtranny.netlify.app',
+  },
 
   integrations: [
     react(),
