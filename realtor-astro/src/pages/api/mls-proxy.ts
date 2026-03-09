@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ request }) => {
       price: 450000,
       lat: 40.73061,
       lng: -73.935242,
-      image: '/images/sample1.jpg',
+      image: 'public/images/sample1.jpg',
       description: 'Beautifully updated home close to amenities.'
     },
     {
@@ -39,7 +39,7 @@ export const GET: APIRoute = async ({ request }) => {
       price: 650000,
       lat: 40.741895,
       lng: -73.989308,
-      image: '/images/sample2.jpg',
+      image: 'public/images/sample2.jpg',
       description: 'Large yard and modern kitchen.'
     }
   ]
