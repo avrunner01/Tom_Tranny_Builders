@@ -1,0 +1,67 @@
+---
+import '/src/styles/index.css';
+import BackButton from "../components/BackButton.astro";
+
+const site = Astro.site
+const { title } = Astro.props
+---
+
+ <link href="./src/output.css" rel="stylesheet">
+ 
+   <body style="background-color: #33cb1e95;">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-4" />
+  </body>
+
+  <BackButton />
+
+  <section class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Transmission Services</h1>
+    <p class="text-lg text-gray-700 mb-10">
+      Built for Arizona roads. Whether you're towing in the heat or cruising through San Tan Valley, we deliver precision, reliability, and warranty-backed support.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service Card -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Diagnostics</h2>
+        <p class="text-gray-600 mb-4">Full scan and inspection to pinpoint issues before they escalate.</p>
+        <span class="text-sm text-gray-500">12-month / 12,000-mile warranty</span>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Rebuild & Replacement</h2>
+        <p class="text-gray-600 mb-4">OEM-grade rebuilds or full replacements with performance options.</p>
+        <span class="text-sm text-gray-500">Up to 3 years / 36,000 miles</span>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Fluid Flush & Filter</h2>
+        <p class="text-gray-600 mb-4">Climate-specific fluids and filters to extend transmission life.</p>
+        <span class="text-sm text-gray-500">6-month service guarantee</span>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Performance Tuning</h2>
+        <p class="text-gray-600 mb-4">Shift point optimization for towing, off-road, or street builds.</p>
+        <span class="text-sm text-gray-500">Custom warranty available</span>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Clutch & Flywheel</h2>
+        <p class="text-gray-600 mb-4">Manual transmission upgrades and replacements.</p>
+        <span class="text-sm text-gray-500">12-month / 12,000-mile warranty</span>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mt-12 text-center">
+      <a href="/booking" class="inline-block bg-blue-600 text-white text-lg font-medium px-6 py-3 rounded-md hover:bg-blue-700 transition">
+        Book Your Service
+      </a>
+    </div>
+  </div>
+</section>
+
+<BackButton />

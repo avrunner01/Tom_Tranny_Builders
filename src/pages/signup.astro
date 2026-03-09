@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BackButton from "../components/BackButton.astro";
+---
+
+<BackButton />
+
+<Layout title="Sign Up | Tom’s Transmission Service">
+  <h1 class="text-3xl font-bold mb-6">Create Your Account</h1>
+  <form class="space-y-6 max-w-md">
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+      <input type="text" id="name" name="name" required class="w-full border px-3 py-2 rounded mt-1" />
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+      <input type="email" id="email" name="email" required class="w-full border px-3 py-2 rounded mt-1" />
+    </div>
+
+    <div>
+      <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+      <input type="password" id="password" name="password" required class="w-full border px-3 py-2 rounded mt-1" />
+    </div>
+
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-semibold w-full">
+      Sign Up
+      </button>
+    </button>
+
+    <p class="text-sm text-gray-600 text-center">
+      Already have an account?
+      <a href="/login" class="text-blue-600 hover:underline">Log in</a>
+    </p>
+  </form>
+</ayout>

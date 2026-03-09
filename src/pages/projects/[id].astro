@@ -1,0 +1,20 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { id: 'estate-queen-creek' } },
+    { params: { id: 'golf-course-drone' } },
+    { params: { id: 'event-sunset-ranch' } },
+  ];
+}
+
+const { id } = Astro.params;
+---
+<html lang="en">
+  <head>
+    <title>Project: {id}</title>
+  </head>
+  <body class="p-8 bg-gray-50 text-gray-900">
+    <h1 class="text-3xl font-bold mb-4">Previuos Project: {id}</h1>
+    <p>This page showcases aerial media for <strong>{id}</strong>.</p>
+  </body>
+</html>

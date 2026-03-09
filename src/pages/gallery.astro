@@ -1,0 +1,51 @@
+---
+import '/src/styles/index.css';
+import Base_Layout from '../layouts/Base_Layout.astro';
+import BackButton from "../components/BackButton.astro";
+
+const site = Astro.site
+const { title } = Astro.props
+---
+
+ <link href="./src/output.css" rel="stylesheet">
+
+   <body style="background-color: #33cb1e95;">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+  </body>
+
+  <BackButton />
+ 
+<section class="p-20" style="text-align: center;">
+  <h1 class="text-5xl font-semibold p-3 text-shadow-cyan-400">Hot Rod Gallery</h1>
+     <p>Beautiful Hot Rods</p>
+</section>
+
+  <div class="flex space-x-3.5 p-2 justify-center">
+      <img src="src/logos/3D image of dodge demon.png" alt="Helcat Logo" class="w-50 h-auto" />
+   	  <img src="src/logos/hellcat_redeye.png" alt="Helcat Logo" class="w-50 h-auto" />
+      <img src="src/logos/mopar_1.jpg" alt="mopar logo" class="w-50 h-auto" />
+	    <img src="src/logos/2026 hellcat red eye.png" alt="mopar logo" class="w-50 h-auto" />	  
+	    <img src="src/logos/67_Chevy.png" alt="mopar logo" class="w-50 h-auto" />
+  </div>
+   
+  <div class ="container p-5"></div>
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/qfGEyshLAf4" title="Dodge Demon Burnout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+ <div class ="container p-5"></div>
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/JhdRv3KNHXA?si=0hK8lv8BJQywVlFz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+ <div class ="container p-5"></div>
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/wHw2Svdpb8M?si=BJHDLNPYw9f7LO2i&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+<div class ="container p-5"></div>
+    <iframe width="50%" height="50%" src="https://www.youtube.com/embed/l0FgtNYwXOs" title="Super Bird" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ <body class="bg-yellow-100 bg-conic-120">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+  </body>
+
+  <BackButton />

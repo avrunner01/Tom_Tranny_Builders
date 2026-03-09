@@ -1,0 +1,45 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+import svg from "daisyui/base/svg";
+
+const features = [
+  {
+    title: "Bring Your Own Transmission",
+    description:
+      "We rebuild your transmission and return to you the same day. No need to leave your car for days.",
+    icon: "volkswagon",
+  },
+  {
+    title: "Fast Facts",
+    description:
+      "50 years experience in ALL types of transmissions. All Hot Rods.",
+    icon: "hand",
+  },
+  {
+    title: "Free Estimates",
+    description:
+      "Bring your hot rod for a free estimate.",
+    icon: "beer",
+  },
+];
+
+---
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 p-4">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+  <link href="./src/output.css" rel="stylesheet">

@@ -1,0 +1,6 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="220" height="220" rx="30" fill="#003366" stroke="#FF0000" stroke-width="8" />
+  <text x="120" y="80" text-anchor="middle" font-size="32" font-family="Impact, Arial Black, sans-serif" fill="#FF0000" font-weight="bold">Chevy</text>
+  <text x="120" y="130" text-anchor="middle" font-size="48" font-family="Impact, Arial Black, sans-serif" fill="#FFD700" font-weight="bold">350</text>
+  <text x="120" y="170" text-anchor="middle" font-size="28" font-family="Impact, Arial Black, sans-serif" fill="#FFFFFF">Turbo Tranny</text>
+</svg>

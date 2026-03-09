@@ -1,0 +1,12 @@
+---
+const { listing } = Astro.props
+---
+<article class="listing-card">
+  <a href={`/listing/${listing.id}`}>
+    <img src={listing.image} alt={listing.title} />
+    <div class="listing-meta">
+      <h3>{listing.title}</h3>
+      <p class="price">${listing.price.toLocaleString()}</p>
+    </div>
+  </a>
+</article>

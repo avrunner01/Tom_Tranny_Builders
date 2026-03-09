@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "daisyui";
+
+body {
+	background-color: #33cb1e95;
+}

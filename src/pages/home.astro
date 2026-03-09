@@ -1,0 +1,126 @@
+---
+import '/src/styles/index.css';
+import Base_Layout from '../layouts/Base_Layout.astro';
+
+const site = Astro.site
+const { title } = Astro.props
+---
+
+   
+ <link href="./src/output.css" rel="stylesheet">
+
+<section class="p-8">
+  <h1 class="text-3xl font-bold mb-4">Home</h1>
+  <p> Home sweet home.</p>
+</section>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCAMS - Integrated Campus Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Header -->
+   
+  <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Integrated Campus Management System</h1>
+        <p>Streamline your educational institution's operations with our all-in-one platform for administration, academics, and student services.</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Request Demo</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>Powerful Features for Modern Education</h2>
+            <p>iCAMS provides comprehensive tools to manage all aspects of your educational institution efficiently</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Student Management</h3>
+                <p>Complete student lifecycle management from admission to alumni tracking with detailed profiles and analytics.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Academic Planning</h3>
+                <p>Curriculum design, course scheduling, faculty workload management, and academic calendar integration.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <h3>Financial Management</h3>
+                <p>Automated fee collection, expense tracking, payroll processing, and financial reporting tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analytics Dashboard</h3>
+                <p>Real-time institutional analytics with customizable reports and data visualization tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Access</h3>
+                <p>Full-featured mobile apps for students, faculty, and administrators with push notifications.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security & Compliance</h3>
+                <p>Enterprise-grade security with role-based access control and regulatory compliance features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="demo-container">
+            <div class="section-title">
+                <h2>See iCAMS in Action</h2>
+                <p>Explore how our platform can transform your institution's operations with this interactive demo</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSG_djLG0V2eHad49hdS3QhCYnyqD7SKaejQ&s" alt="iCAMS Dashboard Demo" class="demo-image">
+        </div>
+    </section>
+
+ 
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>

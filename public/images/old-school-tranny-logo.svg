@@ -1,0 +1,7 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="220" height="220" rx="30" fill="#1A1A1A" stroke="#FFD700" stroke-width="8" />
+  <text x="120" y="90" text-anchor="middle" font-size="28" font-family="Georgia, serif" fill="#FFD700" font-weight="bold">Tom's</text>
+  <text x="120" y="130" text-anchor="middle" font-size="22" font-family="Georgia, serif" fill="#FFFFFF">Old School</text>
+  <text x="120" y="170" text-anchor="middle" font-size="28" font-family="Georgia, serif" fill="#FFD700" font-weight="bold">Tranny</text>
+  <text x="120" y="210" text-anchor="middle" font-size="22" font-family="Georgia, serif" fill="#FFFFFF">Service</text>
+</svg>

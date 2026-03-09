@@ -1,0 +1,161 @@
+---
+import '/src/styles/index.css';
+import BackButton from "../components/BackButton.astro";
+
+const site = Astro.site
+const { title } = Astro.props
+const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #111; color: #eee; }
+      h1, h2 { text-align: center; }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+      figure { margin: 0; }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+      img:hover { transform: scale(1.05); }
+      figcaption { text-align: center; margin-top: 0.5rem; font-size: 0.9rem; }
+      a { color: #ff6600; }
+    </style>
+  </head>
+  <body>
+    <h1>{pageTitle}</h1>
+    <p style="text-align:center; max-width:800px; margin:0 auto 3rem;">
+      A celebration of hot rod culture – iconic 'muscle, wild customs, rat rods, and classic HOT ROD Magazine covers.
+    </p>
+
+    <h2>Classic Car Gallery</h2>
+    <div class="gallery">
+      <figure>
+        <a href="https://www.hotrod.com/features/1970-plymouth-gtx-4406-not" target="_blank">
+          <img src="src/images/1970-plymouth-gtx.avif" alt="Picture 4"" />
+        </a>
+        <figcaption>1970 Plymouth GTX 440+6 All Hers, Not His</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://digital.modernrodding.com/previewissue/june-2023/1932-ford-highboy-roadster-wins-americas-most-beautiful-roadster-trophy-at-the-grand-national-roadster-show/" target="_blank">
+          <img src="https://digital.modernrodding.com/wp-content/uploads/2023/05/mr-june-2023-built-feature.jpg" alt="AMBR Winner '32 Highboy" loading="lazy" />
+        </a>
+        <figcaption>Shop-Built AMBR Winner</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.autobarnclassiccars.com/vehicles/1626/1932-ford-highboy" target="_blank">
+          <img src="https://cdn.dealeraccelerate.com/ab/1/1735/89291/790x1024/w/1932-ford-highboy" alt="1932 Ford Highboy" loading="lazy" />
+        </a>
+        <figcaption>1932 Ford Highboy – Auto Barn</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://inthegaragemedia.com/bobby-alloway-rounded-up-leftover-hot-rod-parts-and-built-this-1932-ford-highboy-roadster/" target="_blank">
+          <img src="https://inthegaragemedia.com/wp-content/uploads/2021/08/01-1932-Ford-Highboy-Roadster-built-by-Alloway-Hot-Rod-Shop.jpg" alt="Alloway's Leftover Parts '32" loading="lazy" />
+        </a>
+        <figcaption>Bobby Alloway's Leftover Parts Build</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.hotrod.com/features/built-barn-hot-rod-1932-ford-highboy-roadster" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65ceb63abddcc30008218da4/001-1932-ford-roadster-friedrich.jpg?w=768&width=768&q=75&format=webp" alt="Barn-Built '32 Highboy" loading="lazy" />
+        </a>
+        <figcaption>Barn-Built 1932 Ford Highboy</figcaption>
+      </figure>
+    </div>
+
+    <h2>Custom Hot Rods, Rat Rods & Restomods</h2>
+    <div class="gallery">
+      <figure>
+        <a href="https://www.facebook.com/groups/musclecarsandhotrods/posts/4057772714551437/" target="_blank">
+          <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=9467368499961061" alt="1960 Pro-Touring Build" loading="lazy" />
+        </a>
+        <figcaption>Weathered 1960 Pro-Touring</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://dyler.com/cars/buick/custom-for-sale/1927/52039/buick-custom-protouring-hot-rod-cabriolet-roadster-1927-black-for-sale" target="_blank">
+          <img src="https://assets.dyler.com/uploads/cars/52039/1746454/medium_classic-buick-custom-protouring-hot-rod-cabriolet-roadster-1927-black-for-sale.webp" alt="1927 Buick Pro-Touring" loading="lazy" />
+        </a>
+        <figcaption>1927 Buick Custom Pro-Touring</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.facebook.com/detroitspeedengineering/posts/anyone-catch-casey-currie-and-his-1967-camaro-on-the-hot-rod-magazine-power-tour/6930038943688262/" target="_blank">
+          <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=6930038787021611" alt="1967 Camaro Power Tour" loading="lazy" />
+        </a>
+        <figcaption>Casey Currie's 1967 Camaro</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.instagram.com/p/DR1-letjrcW/" target="_blank">
+          <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3777449453729976697" alt="Wild Rat Rod" loading="lazy" />
+        </a>
+        <figcaption>Wild Rat Rod Style</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.speedhunters.com/2019/07/eurowises-long-low-mercedes-benz-hot-rod/" target="_blank">
+          <img src="https://s3.amazonaws.com/speedhunters-wp-production/wp-content/uploads/2019/07/01032035/Eurowise-Mercedes-Cover-1200x800.jpg" alt="Eurowise Mercedes Hot Rod" loading="lazy" />
+        </a>
+        <figcaption>Eurowise Low Mercedes Hot Rod</figcaption>
+      </figure>
+    </div>
+
+    <h2>Vintage HOT ROD Magazine Covers (1950s–1960s)</h2>
+    <div class="gallery">
+      <figure>
+        <a href="https://www.hotrod.com/news/vintage-car-magazines-40s-50s-60s" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65cbbb211fcabe00096faf2a/015-dixey-vintage-car-magazines-40s-50s-60s.png?w=768&width=768&q=75&format=webp" alt="Vintage HOT ROD Cover" loading="lazy" />
+        </a>
+        <figcaption>Classic 1950s–60s Cover</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.hotrod.com/news/vintage-car-magazines-40s-50s-60s" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65cbbb21d0ecc400088f3866/013-dixey-vintage-car-magazines-40s-50s-60s.png?w=768&width=768&q=75&format=webp" alt="Vintage HOT ROD Cover" loading="lazy" />
+        </a>
+        <figcaption>Iconic Era Cover</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.hotrod.com/news/vintage-car-magazines-40s-50s-60s" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65cbbb214570b90008c20907/014-dixey-vintage-car-magazines-40s-50s-60s.png?w=768&width=768&q=75&format=webp" alt="Vintage HOT ROD Cover" loading="lazy" />
+        </a>
+        <figcaption>Golden Age Issue</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.hotrod.com/news/vintage-car-magazines-40s-50s-60s" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65cbbb39b69f7600084d2370/028-dixey-vintage-car-magazines-40s-50s-60s.jpg?w=768&width=768&q=75&format=webp" alt="Vintage HOT ROD Cover" loading="lazy" />
+        </a>
+        <figcaption>Retro Hot Rod Magazine</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.hotrod.com/news/vintage-car-magazines-40s-50s-60s" target="_blank">
+          <img src="https://hips.hearstapps.com/mtg-prod/65cbbb38b00a8400086406a5/030-dixey-vintage-car-magazines-40s-50s-60s.png?w=768&width=768&q=75&format=webp" alt="Vintage HOT ROD Cover" loading="lazy" />
+        </a>
+        <figcaption>1950s–60s Classic</figcaption>
+      </figure>
+    </div>
+
+    <footer style="text-align:center; margin-top:4rem;">
+      <p><a href="/">← Back to Home</a> | Inspired by <a href="https://www.hotrod.com" target="_blank">HOT ROD Magazine</a></p>
+    </footer>
+  </body>
+</html>

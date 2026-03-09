@@ -1,0 +1,37 @@
+---
+import Base_Layout from '../layouts/Base_Layout.astro';
+import '/src/styles/index.css';
+import BackButton from "../components/BackButton.astro";
+
+const site = Astro.site
+const { title } = Astro.props
+---
+
+ <link href="./src/output.css" rel="stylesheet">
+  
+  <body style="background-color: #33cb1e95;">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+  </body>
+
+  <BackButton />
+  
+ <div class="grid place-items-center p-20">
+  <div class="text-center space-y-2">
+    <h1 class="text-3xl font-bold text-blue-500">Contact Us</h1>
+    <p>Email: John_Doe@gmail.com</p>
+    <p>Tom's Trannny Service</p>
+    <p>Cell: (480)-123-4567</p>
+    <p>Call for directions</p>
+    <p>San Tan Valley, AZ</p>
+    </p>
+</div>
+</div>
+
+<section class="maps">
+  <h1 class="flex justify-center mb-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3052880024156!2d-111.64081546998796!3d33.2200052458988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872a4d19bc865833%3A0x7f1d563ee338b438!2sFat%20Cats%20Queen%20Creek!5e0!3m2!1sen!2sus!4v1753553534910!5m2!1sen!2sus" width="1024" height="500" style="border:0;" allowfullscreen></iframe>
+  </h1>
+ </section>
+
+ <BackButton />

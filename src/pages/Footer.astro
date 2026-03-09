@@ -1,0 +1,56 @@
+---
+const year = new Date().getFullYear();
+import "../components/Button.jsx";
+import "../pages/index.astro"
+import '/src/styles/index.css';
+
+const site = Astro.site
+const { title } = Astro.props
+
+interface Props {
+  title: string
+}
+---
+
+<link href="./src/output.css" rel="stylesheet">
+
+  <header>
+    <nav class="nav-links">
+       <div class="flex justify-center space-x-5 text-blue-600">
+        <li><a class="hover:text-gray-900" href="index">Home</a></li>
+        <li><a class="hover:text-gray-900" href="about">About</a></li>
+        <li><a class="hover:text-gray-900" href="services">Services</a></li>
+        <li><a class="hover:text-gray-900" href="media"">Media</a></li>
+        <li><a class="hover:text-gray-900" href="gallery">Gallery</a></li>
+        <li><a class="hover:text-gray-900" href="contact">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+  
+  </nav>
+    
+  <nav>
+    <div class="flex justify-center space-x-5">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+        </a>
+        <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+        </a>
+    </div>
+ </nav>
+   <p class="text-sm text-center">&copy; {year} Tom's Tranny Rebuilders. All rights reserved.</p>
+
+   <div class="">
+  <a id="btt" class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-purple-600 hover:bg-gray-200 hover:text-purple-600 hover:border-browngray no-underline px-6 py-1 bg-purple-600 shadow-md" href="#top" title="Back to Top">UP</a>
+</div>
+

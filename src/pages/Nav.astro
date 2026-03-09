@@ -1,0 +1,116 @@
+---
+import '/src/styles/index.css';
+const site = Astro.site
+const { title } = Astro.props
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Container from "../components/container.astro";
+import Link from "../components/ui/link.astro";
+import Dropdown from "../navbar/dropdown.astro";
+import "../styles/gallery.css";
+
+interface Props {
+  title: string
+}
+
+const menuItems = [
+  {
+    title: "Home",
+    path: "#",
+    children: [
+      { title: "Action", path: "/" },
+      { title: "Another action", path: "#" },
+      { title: "Dropdown Submenu", path: "#" },
+      { title: "404 Page", path: "/404" },
+    ],
+  },
+  {
+    title: "About",
+    path: "/about",
+  },
+  {
+    title: "Services",
+    path: "/services",
+  },
+  {
+    title: "Media",
+    path: "/media",
+  },
+{
+    title: "Gallery",
+    path: "/gallery",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+  {
+    title: "Blog",
+    badge: true,
+    path: "/blog",
+  },
+ ];
+---
+
+<header class="sticky top-0 z-50 max-w-4xl mx-auto flex justify-center items-center my-5" style="background-color: #33cb1e95;">
+  <Container class="w-full flex justify-center">
+    <Astronav>
+      <nav class="text-gray-800 w-full flex justify-center items-center px-4 py-3">
+        <div class="block lg:hidden">
+          <MenuIcon class="w-4 h-4 text-gray-800" />
+        </div>
+      </nav>
+      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          {
+            menuItems.map((item, index) => (
+              <>
+                {item.children && (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuItems.length - 1}
+                  />
+                )}
+                {!item.children && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+                      <span> {item.title}</span>
+                      {item.badge && (
+                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
+                          New
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                )}
+                {/* Insert Log in and Sign up after Blog */}
+                {item.title === "Blog" && (
+                  <>
+                    <li>
+                      <a href="login" class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">Log in</a>
+                    </li>
+                    <li>
+                      <Link href="signup" size="md" class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">Sign up</Link>
+                    </li>
+                  </>
+                )}
+              </>
+            ))
+          }
+        </ul>
+      </MenuItems>
+    </Astronav>
+   </Container>
+</header>
+
+<div class="w-full flex justify-center py-4">
+  <span class="font-bold text-lg">Tom Tranny Rebuilders</span>
+</div>
+
+<link href="./src/output.css" rel="stylesheet">
+
+ 
+
+  

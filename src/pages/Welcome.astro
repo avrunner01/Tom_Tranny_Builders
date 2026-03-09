@@ -1,0 +1,43 @@
+---
+import Nav from '../pages/Nav.astro';
+import Home from '../pages/Home.astro';
+import ScrollingImages from './Scrolling_images.astro';
+---
+ <link href="./src/output.css" rel="stylesheet">
+
+ <head>
+    <title>Tom's Tranny Service</title>
+  </head>
+ 
+ <html lang="en">
+
+     <Nav/>
+
+	   <body style="background-color: #33cb1e95;"></body>
+    <section class="flex flex-col items-center justify-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+
+      <h1 class="text-7xl mb-4 bg-amber-500 p-5">Welcome to Tom's Tranny Rebuilders</h1>
+      <p class="text-5xl text-center max-w-xl text to-red-500">
+        Old School Muscle
+      </p>
+
+       <div class="relative h-screen w-full">
+         <img src="src/logos/Lenco_Tranny.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter blur-sm">
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+  </div>
+</div>
+
+	  <div class="flex space-x-2.5 p-5">
+      <img src="src/logos/hellcat_redeye.png" alt="Helcat Logo" class="w-50 h-auto" />
+      <img src="src/logos/mopar_1.jpg" alt="mopar logo" class="w-50 h-auto" />
+	    <img src="src/logos/2026 hellcat red eye.png" alt="mopar logo" class="w-50 h-auto" />	  
+	    <img src="src/logos/67_Chevy.png" alt="mopar logo" class="w-50 h-auto" />
+    </div>
+    </section>
+  </body>
+
+    <ScrollingImages/>
+</html>
+
+ 

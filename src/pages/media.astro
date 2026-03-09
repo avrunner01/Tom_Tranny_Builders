@@ -1,0 +1,126 @@
+---
+import '/src/styles/index.css';
+import BackButton from "../components/BackButton.astro";
+import HotRodGallery from '../pages/HotRodGallery.astro';
+
+
+const site = Astro.site
+const { title } = Astro.props
+
+const pageTitle = "Media Tom's Transmission Service";
+const gallery = [
+  { src: "src/media/front_building.jpg", alt: "Shop exterior", caption: "Our San Tan Valley location" },
+  { src: "src/media/BB396.jpg", alt: "Engine rebuild", caption: "Precision 396 BBC rebuild in progress" },
+  { src: "src/media/drivetrain.jpg", alt: "Classic Chevelle", caption: "Custom drivetrain install on a 67 Chevelle"},
+];
+
+const videos = [];
+---
+
+
+<link href="./src/output.css" rel="stylesheet">
+ 
+ <body class="bg-yellow-100 bg-conic-120">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+  </body>
+
+<section class="p-1" style="text-align: center;">
+  <h1 class="text-5xl font-semibold p-15 text-shadow-cyan-400">Media Center</h1>
+ </section>
+
+  <BackButton />
+  
+ <HotRodGallery/>
+
+  <BackButton />
+ 
+<html lang="en">
+  <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content="Explore photos, videos, and press coverage from Tom's Transmission Service in Arizona." />
+  </head>
+     <body style="background-color: #33cb1e95;">
+    <main class="max-w-6xl mx-auto px-6 py-16">
+      <h1 class="text-4xl font-bold mb-5">Media Gallery</h1>
+
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+        {gallery.map((item) => (
+          <div class="rounded overflow-hidden shadow">
+            <img src={item.src} alt={item.alt} class="w-full h-48 object-cover" />
+            <div class="p-4 text-sm text-gray-700">{item.caption}</div>
+          </div>
+        ))}
+      </section>
+      
+      <h2 class="text-4xl font-semibold mb-6">Shop Videos</h2>
+      <section class="space-y-10">
+        {videos.map((video) => (
+          <div>
+            <h3 class="text-xl font-medium mb-2">{video.title}</h3>
+            <div class="aspect-video">
+              <iframe src={video.url} frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+          </div>
+        ))}
+      </section>
+
+<h1 class="text-2xl font-medium mb-6 mt-3.5">Automatic Transmission Teardown Part 1: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_6.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+    
+ <h1 class="text-2xl font-medium mb-6 mt-3.5">Automatic Transmission Teardown Part 2: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<h1 class="text-2xl font-medium mb-6 mt-3.5">Automatic Transmission Teardown Part 3: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_3.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<h1 class="text-2xl font-medium mb-6 mt-3.5">Automatic Transmission Teardown Part 4: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_4.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<h1 class="text-2xl font-medium mb-6 mt-3.5">Automatic Transmission Teardown Part 5: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_5.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<h1 class="text-2xl font-medium mb-6 mt-1.5">Automatic Transmission Teardown Part 6: Full Disassembly & Inspection</h1>
+  <div class="video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/Tranny_teardown_1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+    <BackButton />
+   
+      <h2 class="text-3xl font-semibold mt-16 mb-6">In the Press</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><a href="https://moparconnectionmagazine.com/" class="text-blue-600 hover:underline">Mopar Magazine</a></li>
+        <li><a href="https://www.hotrod.com/" class="text-blue-600 hover:underline">"Inside Tom's 69 Challenger Build</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
+

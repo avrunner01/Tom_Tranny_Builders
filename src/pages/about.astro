@@ -1,0 +1,80 @@
+---
+import '/src/styles/index.css';
+import BackButton from "../components/BackButton.astro";
+
+const site = Astro.site
+const { title } = Astro.props
+const pageTitle = "About Tom’s Transmission Service";
+---
+
+ <link href="./src/output.css" rel="stylesheet">
+
+
+   <body style="background-color: #33cb1e95;">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+      <h1 class="text-7xl mb-4 bg--300">About Tom's Tranny Rebuilders</h1>    
+ </body>
+
+ <BackButton />
+ 
+ <html lang="en">
+ <head>
+    <title>{pageTitle}</title>
+    <meta name="description" content="Learn more about Tom’s Transmission Service—Arizona’s trusted source for expert transmission repair and drivetrain solutions." />
+ </head>
+
+ <body class="bg-white text-gray-800 font-sans">
+   <main class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-6">About Tom's Transmission Service</h1>
+
+      <p class="mb-6">
+        Welcome to <strong>Tom's Transmission Service</strong>, your trusted source for expert transmission repair and drivetrain solutions in Arizona. With decades of hands-on experience and a reputation built on honesty, craftsmanship, and long-term reliability, we specialize in keeping your vehicle running strong—whether you're cruising through the desert or towing through the mountains.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">What We Do</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Transmission Rebuilds & Repairs</strong> – From classic muscle cars to modern trucks, we diagnose and rebuild automatic and manual transmissions with precision and care.</li>
+        <li><strong>Drivetrain Diagnostics</strong> We troubleshoot vibration, shifting issues, and power loss using advanced tools and old-school know-how.</li>
+        <li><strong>Performance Upgrades</strong> – Need more torque or towing capacity? We install heavy-duty clutches, torque converters, and gear sets tailored to your build.</li>
+        <li><strong>Preventive Maintenance</strong> Fluid flushes, filter replacements, and inspections to keep your transmission healthy and avoid costly breakdowns.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Why Choose Tom?</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Locally Owned & Operated</strong> Proudly serving Arizona drivers with personalized service and deep community roots.</li>
+        <li><strong>Warranty-Backed Work</strong> Every rebuild and major repair comes with a written warranty—because we stand behind our work.</li>
+        <li><strong>Transparent Estimates</strong> No guesswork, no surprises. We walk you through every step before turning a wrench.</li>
+        <li><strong>Classic & Custom Friendly</strong> We love working on vintage rides, resto-mods, and custom builds. If it’s got gears, we’ve got you covered.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Visit Us</h2>
+      <p>
+        Located in the heart of San Tan Valley, we're easy to find and ready to help. Whether you're dealing with a slipping transmission or planning a full drivetrain upgrade, Tom's Transmission Service is here to get you back on the road—with confidence.
+      </p>
+    </main>
+  </body>
+</html>
+
+ 
+  <body class="bg-yellow-100 bg-conic-120 p-10">
+    <section class="flex flex-col items-center min-h-screen">
+		 <img src="src/logos/american-muscle.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
+  </body>
+ 
+<div class="aspect-auto w-64 h-64">
+     <img class="object-cover shawow-lg rounded-lg" 
+  src="src/logos/hellcat_redeye.png" alt="Hellcat Redeye logo"/>
+</div>
+
+<img 
+  src="src/logos/hellcat_redeye.png" 
+  alt="Hellcat Redeye logo featuring a stylized aggressive cat head with sharp lines and bold expression set against a plain background conveying power and high performance" 
+  class="aspect-square w-2 h-2 mb-20 pb-2/3 lg:pt-2/3 lg:pb-0 object-cover shadow-lg rounded-lg"
+/>
+
+<h1 class="text-4xl font-bold p-2 mb-4 text-blue-700">
+  Welcome to My Website - now go away - I havew SiFy movies to watch
+</h1>
+
+<BackButton />

@@ -1,0 +1,22 @@
+---
+const { listings } = Astro.props || { listings: [] }
+---
+<div class="map-wrapper">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <div id="map" style="height: 400px;"></div>
+
+  <script type="module">
+    import L from 'https://unpkg.com/leaflet@1.9.4/dist/leaflet-src.esm.js'
+    const map = L.map('map').setView([40.73, -73.98], 12)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map)
+
+    const listings = JSON.parse(document.currentScript.getAttribute('data-listings') || '[]')
+    listings.forEach(l => {
+      if (l.lat && l.lng) {
+        L.marker([l.lat, l.lng]).addTo(map).bindPopup(`<a href="/listing/${l.id}">${l.title}</a>`)
+      }
+    })
+  </script>
+</div>
