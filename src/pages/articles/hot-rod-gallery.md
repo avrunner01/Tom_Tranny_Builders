@@ -22,7 +22,7 @@ Inspired by HOT ROD Magazine's legacy (over 77 years strong in 2025), here's a c
 
 ![Custom Coach Building Example](https://www.customsandhotrodsofandice.com/application/files/3715/6346/5181/Screen_Shot_2019-07-18_at_8.52.28_AM.png)
 
-![Wilco Classics Hot Rod](https:/public/images.squarespace-cdn.com/content/v1/6239c2206cf21617111e8134/d92b1716-2588-4bcd-9473-4a558fd39777/IMG_4315.jpg)
+![Wilco Classics Hot Rod](https://images.squarespace-cdn.com/content/v1/6239c2206cf21617111e8134/d92b1716-2588-4bcd-9473-4a558fd39777/IMG_4315.jpg)
 
 ![CCS Speed Shop Full Build](https://www.classiccarstudio.com/speedshop/wp-content/uploads/sites/2/2021/08/31_Ford_Model_A-StudioShots-Showroom-1-2-750x500.jpg)
 
@@ -35,10 +35,10 @@ Inspired by HOT ROD Magazine's legacy (over 77 years strong in 2025), here's a c
 
 ![1958 Vintage Hot Rod](https://i.etsystatic.com/19687807/r/il/75167a/5666584861/il_fullxfull.5666584861_t1nf.jpg)
 
-![March 1961 Hot Rod Cover](https://i.ebayimg.compublic/images/g/Bm8AAOSwI~JmBEaQ/s-l1200.jpg)
+![March 1961 Hot Rod Cover](https://i.ebayimg.com/images/g/Bm8AAOSwI~JmBEaQ/s-l1200.jpg)
 
 !['40s-'60s Vintage Car Magazines](https://hips.hearstapps.com/mtg-prod/65cbbb091fcabe00096faf27/008-dixey-vintage-car-magazines-40s-50s-60s.png?w=768&width=768&q=75&format=webp)
 
 ![April 1962 Hot Rod](https://i.etsystatic.com/14054026/r/il/0b37bd/2706964919/il_570xN.2706964919_7upo.jpg)
 
-![1972 Hot Rod Yearbook](https://i.ebayimg.compublic/images/g/vpEAAeSwyv9o7t22/s-l1200.jpg)
+![1972 Hot Rod Yearbook](https://i.ebayimg.com/images/g/vpEAAeSwyv9o7t22/s-l1200.jpg)
