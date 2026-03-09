@@ -3,13 +3,13 @@ import { defineConfig } from 'astro/config';
 import icon from "astro-icon";
 import react from '@astrojs/react';
 
-
 // https://astro.build/config
 export default defineConfig({
-  output: 'static', // Default; use 'server' or 'hybrid' if needed
+  site: 'https://tomtranny.netlify.app', // Moved to top level
+  output: 'static',
+  
   devToolbar: {
     enabled: true,
-    site: 'https://tomtranny.netlify.app',
   },
 
   integrations: [
