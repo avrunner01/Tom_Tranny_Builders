@@ -1,21 +1,23 @@
 ---
 import '/src/styles/index.css';
 import BackButton from "../components/BackButton.astro";
+import Layout from '../layouts/Layout.astro';
 
 const site = Astro.site
 const { title } = Astro.props
 const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
 ---
 
+<Layout title="Media Tom's Transmission Service">
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
-    <style>
-      body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #111; color: #eee; }
-      h1, h2 { text-align: center; }
+        <style>
+      body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; background: #fff; color: #000; }
+      h1, h2 { text-align: center; margin-bottom: 1rem; }
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -30,14 +32,14 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
         transition: transform 0.3s;
       }
       img:hover { transform: scale(1.05); }
-      figcaption { text-align: center; margin-top: 0.5rem; font-size: 0.9rem; }
+      figcaption { text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: #000; }
       a { color: #ff6600; }
     </style>
   </head>
   <body>
-    <h1>{pageTitle}</h1>
-    <p style="text-align:center; max-width:800px; margin:0 auto 3rem;">
-      A celebration of hot rod culture – iconic 'muscle, wild customs, rat rods, and classic HOT ROD Magazine covers.
+    <h1 style="font-size:2.5rem;">{pageTitle}</h1>
+        <p class="text-3xl text-center max-w-2xl mx-auto mb-12">
+      A celebration of hot rod iconic culture, classic muscle, wild customs, rat rods, and classic HOT ROD Magazine covers.
     </p>
 
     <h2>Classic Car Gallery</h2>
@@ -81,6 +83,7 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
     <h2>Custom Hot Rods, Rat Rods & Restomods</h2>
     <div class="gallery">
       <figure>
+        <img src="/images/pro_touring.jpg" alt="Logo" style="width: 80px; display: block; margin: 0 auto 0.5rem;" />
         <a href="https://www.facebook.com/groups/musclecarsandhotrods/posts/4057772714551437/" target="_blank">
           <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=9467368499961061" alt="1960 Pro-Touring Build" loading="lazy" />
         </a>
@@ -88,13 +91,14 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
       </figure>
 
       <figure>
-        <a href="https://dyler.com/cars/buick/custom-for-sale/1927/52039/buick-custom-protouring-hot-rod-cabriolet-roadster-1927-black-for-sale" target="_blank">
+          <a href="https://dyler.com/cars/buick/custom-for-sale/1927/52039/buick-custom-protouring-hot-rod-cabriolet-roadster-1927-black-for-sale" target="_blank">
           <img src="https://assets.dyler.com/uploads/cars/52039/1746454/medium_classic-buick-custom-protouring-hot-rod-cabriolet-roadster-1927-black-for-sale.webp" alt="1927 Buick Pro-Touring" loading="lazy" />
         </a>
         <figcaption>1927 Buick Custom Pro-Touring</figcaption>
       </figure>
 
       <figure>
+        <img src="/images/67_camaro.jpg" alt="Logo" style="width: 80px; display: block; margin: 0 auto 0.5rem;" />
         <a href="https://www.facebook.com/detroitspeedengineering/posts/anyone-catch-casey-currie-and-his-1967-camaro-on-the-hot-rod-magazine-power-tour/6930038943688262/" target="_blank">
           <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=6930038787021611" alt="1967 Camaro Power Tour" loading="lazy" />
         </a>
@@ -102,6 +106,7 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
       </figure>
 
       <figure>
+        <img src="/images/rat_rod.jpg" alt="Logo" style="width: 80px; display: block; margin: 0 auto 0.5rem;" />
         <a href="https://www.instagram.com/p/DR1-letjrcW/" target="_blank">
           <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3777449453729976697" alt="Wild Rat Rod" loading="lazy" />
         </a>
@@ -153,9 +158,9 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
         <figcaption>1950s–60s Classic</figcaption>
       </figure>
     </div>
-
-    <footer style="text-align:center; margin-top:4rem;">
-      <p><a href="/">← Back to Home</a> | Inspired by <a href="https://www.hotrod.com" target="_blank">HOT ROD Magazine</a></p>
-    </footer>
+   
+    <BackButton />
+  
   </body>
 </html>
+</Layout>

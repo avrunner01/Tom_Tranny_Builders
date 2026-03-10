@@ -1,6 +1,7 @@
 ---
 import '/src/styles/index.css';
 import BackButton from "../components/BackButton.astro";
+import Layout from '../layouts/Layout.astro';
 
 const site = Astro.site
 const { title } = Astro.props
@@ -8,7 +9,6 @@ const pageTitle = "About Tom’s Transmission Service";
 ---
 
  <link href="./src/output.css" rel="stylesheet">
-
 
    <body style="background-color: #33cb1e95;">
     <section class="flex flex-col items-center min-h-screen">
@@ -20,6 +20,7 @@ const pageTitle = "About Tom’s Transmission Service";
  
  <html lang="en">
  <head>
+   <Layout title="Media Tom's Transmission Service">
     <title>{pageTitle}</title>
     <meta name="description" content="Learn more about Tom’s Transmission Service—Arizona’s trusted source for expert transmission repair and drivetrain solutions." />
  </head>
@@ -78,3 +79,5 @@ const pageTitle = "About Tom’s Transmission Service";
 </h1>
 
 <BackButton />
+
+</Layout>

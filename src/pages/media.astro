@@ -2,6 +2,7 @@
 import '/src/styles/index.css';
 import BackButton from "../components/BackButton.astro";
 import HotRodGallery from '../pages/HotRodGallery.astro';
+import Layout from '../layouts/Layout.astro';
 
 
 const site = Astro.site
@@ -17,9 +18,10 @@ const gallery = [
 const videos = [];
 ---
 
+<Layout title="Media Tom's Transmission Service">
 <link href="./src/output.css" rel="stylesheet">
  
- <body class="bg-yellow-100 bg-conic-120">
+ <body class="bg-conic-120 text-black text-center">
     <section class="flex flex-col items-center min-h-screen">
 		 <img src="/logos/challenger_blown_motor.jpg" alt="mopar logo" class="w-60 h-auto p-3" />
   </body>
@@ -40,8 +42,8 @@ const videos = [];
     <meta name="description" content="Explore photos, videos, and press coverage from Tom's Transmission Service in Arizona." />
   </head>
      <body style="background-color: #33cb1e95;">
-    <main class="max-w-6xl mx-auto px-6 py-16">
-      <h1 class="text-4xl font-bold mb-5">Media Gallery</h1>
+    <main class="max-w-6xl mx-auto px-6 py-16 text-black text-center">
+      <h1 class="text-4xl font-bold mb-5 text-black text-center">Media Gallery</h1>
 
       <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
         {gallery.map((item) => (
@@ -52,7 +54,7 @@ const videos = [];
         ))}
       </section>
       
-      <h2 class="text-4xl font-semibold mb-6">Shop Videos</h2>
+      <h2 class="text-4xl font-semibold mb-6 text-black text-center">Shop Videos</h2>
       <section class="space-y-10">
         {videos.map((video) => (
           <div>
@@ -128,5 +130,5 @@ const videos = [];
       </ul>
     </main>
   </body>
-</html>
-
+ </html>
+  </Layout>

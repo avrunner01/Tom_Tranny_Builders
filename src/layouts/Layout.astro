@@ -1,14 +1,22 @@
+---
+import Footer from '../components/Footer.astro';
+const { title } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/logos/challenger_blown_motor.jpg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title || "Hot Rod Gallery"}</title>
 	</head>
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
+		<Footer title={title} />
 	</body>
 </html>
 
@@ -17,6 +25,16 @@
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100vh; /* Ensures body covers full screen height */
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		background-color: #83d475; /* Your page background */
+	}
+
+	main {
+		flex: 1; /* This pushes the footer to the very bottom */
 	}
 </style>
