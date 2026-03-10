@@ -1,42 +1,8 @@
 @import "tailwindcss" prefix();
 @plugin: "daisyui";
 
-@theme: {
-    --breakpoint-*: initial;
-    --breakpoint-sm: 640px;
-    --breakpoint-md: 768px; 
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1280px;
-    --color-twitter: #1DA1F2;
-    --color-facebook: #1877F2;
-    --color-orange-500: #ffa500;
-    --color-blue-500: #3b82f6;
-}
-
- :light {
-    primary: "var(--brand-blue)";
-    secondary: "var(--brand-yellow)";
-    accent: "var(--brand-yellow)";
-    neutral: "#3d4451";
-    base-100: "#ffffff";
-    info: "#3abff8";
-    success: "#36d399";
-    warning: "#fbbd23";
-    error: "#f87272";
-  }
-
-  :dark {
-    primary: "var(--brand-blue)";
-    secondary: "var(--brand-yellow)";
-    accent: "var(--brand-yellow)";
-    neutral: "#191d24";
-    base-100: "#2a303c";
-    info: "#3abff8";
-    success: "#36d399";
-    warning: "#fbbd23";
-    error: "#f87272";
-  }
-   
+/* Removed invalid @theme, :light, :dark rules. Use :root for CSS variables and Tailwind's dark: variant for dark mode. */
+/* Add your custom variables here if needed */
 :root {
   --brand-blue: #1e40af;
   --brand-yellow: #facc15;

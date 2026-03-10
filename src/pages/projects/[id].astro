@@ -7,6 +7,8 @@ export function getStaticPaths() {
   ];
 }
 
+export const prerender = true;
+
 const { id } = Astro.params;
 ---
 <html lang="en">
@@ -14,7 +16,7 @@ const { id } = Astro.params;
     <title>Project: {id}</title>
   </head>
   <body class="p-8 bg-gray-50 text-gray-900">
-    <h1 class="text-3xl font-bold mb-4">Previuos Project: {id}</h1>
+    <h1 class="text-3xl font-bold mb-4">Previous Project: {id}</h1>
     <p>This page showcases aerial media for <strong>{id}</strong>.</p>
   </body>
 </html>

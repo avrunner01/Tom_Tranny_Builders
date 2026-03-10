@@ -24,3 +24,6 @@ pnpm-debug.log*
 npm-debug.log*
 .env
 .env.production
+
+# Netlify
+.netlify/
