@@ -1,14 +1,12 @@
 ---
 import '/src/styles/index.css';
 import BackButton from "../components/BackButton.astro";
-import Layout from '../layouts/Layout.astro';
 
 const site = Astro.site
 const { title } = Astro.props
 const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
 ---
 
-<Layout title="Media Tom's Transmission Service">
 <!doctype html>
 <html lang="en">
   <head>
@@ -159,8 +157,9 @@ const pageTitle = "Hot Rod Gallery: Classics, Customs & Vintage Covers";
       </figure>
     </div>
    
-    <BackButton />
-  
+   <div class="flex justify-center my-4">
+     <BackButton />
+    </div>
+     
   </body>
 </html>
-</Layout>
