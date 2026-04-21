@@ -18,7 +18,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/vite": "^4.2.1",
     "amqplib": "^0.10.9",
-    "astro": "^6.0.0",
+    "astro": "^6.1.8",
     "astro-icon": "^1.1.5",
     "astro-navbar": "^2.4.0",
     "autoprefixer": "^10.4.21",
